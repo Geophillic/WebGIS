@@ -17,7 +17,7 @@
 
 <body>
 
-    <header class="home_head">
+    <header id="home" class="home_head">
         <div class="header_intro"><!--- home head that carrries the name --->
             <h1>Oladipupo Ademola Ibrahim </h1>
             <p class="header_subtitle">
@@ -35,13 +35,14 @@
     </header>
     <nav class="main_nav" aria-label="Main navigation">
         <ul>
-            <li><a href="#about">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#competencies">Competencies</a></li>
-            <li><a href="Others">Others</a></li>
-            <li><a href="#semester-webgis">Semester WebGIS</a></li>
-            <li><a href="Contact">Contact</a></li>
+            <li><a href="#Others">Others</a></li>
+            <!-- /*<li><a href="#projects">Projects</a></li>*?/// -->
+            <!-- /* <li><a href="#semester-webgis">Semester WebGIS</a></li>*/ -->
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav_search" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
@@ -86,20 +87,23 @@
     <div class="group-1">
         <h2 class="h_class"><i class="bi bi-mortarboard" other_icon></i> Education</h2>
         <p>Master's student in Geographic Information System and Spatial Planning</p>
-        <p>Focus on spatial data acqusiition, programmng,spatial databases, GIS, Spatial analysis and risk mapping</p>
+        <p class="grp_p">Focus on spatial data acqusiition, programmng,spatial databases, GIS, Spatial analysis and risk
+            mapping</p>
     </div>
 
 
     <div class="group-2">
         <h2 class="h_class"><i class="bi bi-briefcase" other_icon></i>Experience</h2>
         <p>Academic and project experience in spatial data analysis and mapping.</p>
-        <p>Work with ArcGIS, SNAP, PostgreSQL, Python, remote sensing data and geospatial data management.</p>
+        <p class="grp_p">Work with ArcGIS, SNAP, PostgreSQL, Python, remote sensing data and geospatial data management.
+        </p>
     </div>
 
     <div class="group-3">
         <h2 class="h_class"><i class="bi bi-tools" other_icon></i> Competencies</h2>
         <p>GIS & spatial analysis, remote sensing, environmental modelling, cartography and spatial planning.</p>
-        <p>From data collection to data management, manipulation and analysis, Maps and communication of results.</p>
+        <p class="grp_p">From data collection to data management, manipulation and analysis, Maps and communication of
+            results.</p>
     </div>
 
 
@@ -115,7 +119,7 @@
                 deep learning and space-time analysis using ArcGIS, with
                 visualisation and communication through ArcGIS StoryMaps.</p>
             <p class="mooc-provider">Esri Academy | 2026</p>
-            <a href="C:\Users\User\Desktop\University of Porto\Semester 1_Year_2\WebGIS\images\Mooc_certicate..pdf" target="_blank" rel="noopener noreferrer" class="certificate-link">
+            <a href="images\Mooc_certicate..pdf" target="_blank" rel="noopener noreferrer" class="certificate-link">
                 <i class="bi bi-box-arrow-up-right"></i>
                 View Certificate
             </a>
@@ -125,15 +129,40 @@
 
     <div class="down-1">
         <h3 class="h_class"><i class="bi bi-journal-text" other_icon></i> Publications &amp; Presentations</h3>
+        <p class="p_down">Academic works, conference participation and research contributions in the fields of GIS,
+            remote sensing and
+            spatial planning.
+        </p>
+        <a href="https://doi.org/10.1007/s11852-025-01188-w" target="_blank" rel="noopener noreferrer"
+            class="certificate-link">
+            <i class="bi bi-box-arrow-up-right"></i>
+            View publication
+        </a>
     </div>
 
     <div class="down-2">
         <h3 class="h_class"><i class="bi bi-people" other_icon></i> Leadership &amp; Volunteering</h3>
+        <p class="p_down">
+            Involvement in academic initiatives, community projects and volunteering activities related to environment,
+            territorial planning and education.
+        </p>
+        <a href="#Others" target="_blank" class="certificate-link">
+            <i class="bi bi-box-arrow-up-right"></i>
+            View activities
+        </a>
     </div>
 
     <div class="down-3">
         <h3 class="h_class"><i class="bi bi-trophy" other_icon></i> Honours &amp; Awards</h3>
+        <P class="p_down">
+            Recognition for academic performance, project work and extracurricular contributions.
+        </P>
+        <a href="#Others" target="_blank" class="certificate-link">
+            <i class="bi bi-box-arrow-up-right"></i>
+            View awards
+        </a>
     </div>
+
 
     <!-- FOOTER -->
     <footer class="main_footer">
@@ -155,28 +184,27 @@
         <nav class="footer_socials" aria-label="Social media and email">
 
             <!-- LinkedIn -->
-            <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/ademola-oladipupo-3986b0174/" target="_blank" rel="noopener noreferrer"
                 aria-label="LinkedIn profile (opens in a new tab)">
                 <img src="images/Linkedin.jpg" alt="" width="24" height="24">
             </a>
 
             <!-- Twitter / X -->
-            <a href="YOUR_TWITTER_PROFILE_URL" target="_blank" rel="noopener noreferrer"
+            <a href="https://x.com/demo_ree" target="_blank" rel="noopener noreferrer"
                 aria-label="Twitter / X profile (opens in a new tab)">
                 <img src="images/X.jpg" alt="" width="24" height="24">
             </a>
 
             <!-- Gmail / Email -->
-            <a href="mailto:oladipupoademola23@gmail.com" aria-label="Email Oladipupo Ademola Ibrahim">
-                <img src="images/gmail.jpg" alt="" width="24" height="24">
+            <a href="mailto:oladipupoademola23@gmail.com">
+                <img src="images/gmail.jpg" alt="Email Me" width="24" height="24">
             </a>
 
             <!-- GitHub -->
-            <a href="YOUR_GITHUB_PROFILE_URL" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/Geophillic" target="_blank" rel="noopener noreferrer"
                 aria-label="GitHub profile (opens in a new tab)">
                 <img src="images/git.jpg" alt="" width="24" height="24">
             </a>
-
         </nav>
 
         <!-- Copyright -->
@@ -277,25 +305,26 @@
         </div>
 
     </section>
+
     <!-- PROFESSIONAL EXPERIENCE: one container for the entire section -->
     <section id="experience" class="experience">
 
-        <h2 id="experience-heading">Professional Experience</h2>
+        <h2 id="exp_head">Work Experience</h2>
 
         <!-- Mapping and Data Validation Fellow -->
-        <div class="experience-entry">
+        <div class="exp_entry">
 
             <h3>Mapping and Data Validation Fellow</h3>
 
-            <p class="experience-organisation">
+            <p class="exp_org">
                 <strong>Open Mapping Hub, Asia-Pacific, Philippines</strong>
             </p>
 
-            <p class="experience-period">
+            <p class="exp_period">
                 November 2023 – December 2024
             </p>
 
-            <ul class="experience-details">
+            <ul class="exp_details">
 
                 <li>
                     Used Mapillary, JOSM, EveryDoor and Kobo Toolbox to
@@ -319,24 +348,24 @@
             </ul>
 
         </div>
-
+        <hr>
         <!-- Graduate Student Assistant -->
-        <div class="experience-entry">
+        <div class="exp_entry">
 
             <h3>Graduate Student Assistant</h3>
 
-            <p class="experience-organisation">
+            <p class="exp_org">
                 <strong>
                     Department of Disaster Science and Climate Resilience,
                     University of Dhaka
                 </strong>
             </p>
 
-            <p class="experience-period">
+            <p class="exp_period">
                 May 2023 – January 2024
             </p>
 
-            <ul class="experience-details">
+            <ul class="exp_details">
 
                 <li>
                     Modelled flash-flood damage and loss in the Sylhet
@@ -363,25 +392,21 @@
             </ul>
 
         </div>
-
+        <hr>
         <!-- Geography Teacher -->
-        <div class="experience-entry">
+        <div class="exp_entry">
 
             <h3>Geography Teacher</h3>
 
-            <p class="experience-organisation">
+            <p class="exp_org">
                 <strong>Christ Anglican School, Ibadan, Nigeria</strong>
             </p>
 
-            <p class="experience-programme">
-                N-POWER Empowerment Program
-            </p>
-
-            <p class="experience-period">
+            <p class="exp_period">
                 June 2021 – October 2022
             </p>
 
-            <ul class="experience-details">
+            <ul class="exp_details">
 
                 <li>
                     Taught Geography and supported Science classes for
@@ -401,23 +426,23 @@
             </ul>
 
         </div>
-
+        <hr>
         <!-- Graduate Assistant -->
-        <div class="experience-entry">
+        <div class="exp_entry">
 
             <h3>Graduate Assistant</h3>
 
-            <p class="experience-organisation">
+            <p class="exp_org">
                 <strong>
                     Federal University of Technology Owerri, Nigeria
                 </strong>
             </p>
 
-            <p class="experience-period">
+            <p class="exp_period">
                 April 2019 – March 2020
             </p>
 
-            <ul class="experience-details">
+            <ul class="exp_details">
 
                 <li>
                     Assisted academic staff in preparing and coordinating
@@ -439,24 +464,24 @@
             </ul>
 
         </div>
-
+        <hr>
         <!-- GIS Field Supervisor -->
-        <div class="experience-entry">
+        <div class="exp_entry">
 
             <h3>GIS Field Supervisor</h3>
 
-            <p class="experience-organisation">
+            <p class="exp_org">
                 <strong>
                     Polaris Digitech Nigeria Limited,
                     CMD Ikeja, Lagos State, Nigeria
                 </strong>
             </p>
 
-            <p class="experience-period">
+            <p class="exp_period">
                 October 2018 – March 2019
             </p>
 
-            <ul class="experience-details">
+            <ul class="exp_details">
 
                 <li>
                     Led a team of 5 field data collectors, overseeing
@@ -482,7 +507,328 @@
 
     </section>
 
+    <section id="competencies" class="competencies">
 
+        <h2 id="competencies_head">Competencies</h2>
+
+        <hr>
+        <div class="core_skill">
+
+            <h3>Core Skills</h3>
+
+            <ul class="competency-list">
+                <li>Spatial Analysis & Geospatial Data Management</li>
+                <li> Remote Sensing & Image Analysis</li>
+                <li>Data Analysis & Visualization</li>
+                <li>Research & Technical Writing</li>
+                <li>Teaching & Academic Support</li>
+                <li>Administrative & Documentation</li>
+                <li>Scientific Presentation & Communication</li>
+                <li>GIS and Environmental Modeling</li>
+            </ul>
+
+        </div>
+
+        <!-- Technical skills -->
+        <div class="competency-group">
+
+            <h3>Technical Skills</h3>
+
+            <ul class="competency-list">
+
+                <li>
+                    <strong>GIS &amp; Remote Sensing:</strong>
+                    ArcGIS Pro • QGIS • Google Earth Engine •
+                    ENVI • ERDAS IMAGINE • SNAP • TERRSET • InVEST
+                </li>
+
+                <li>
+                    <strong>Data &amp; Programming:</strong>
+                    Python (NumPy, Pandas, GeoPandas, Rasterio,
+                    Matplotlib, Scikit-learn) • SQL • Excel • Power BI
+                </li>
+
+                <li>
+                    <strong>Mapping &amp; Field Tools:</strong>
+                    JOSM • Mapillary • KoboToolbox • EveryDoor •
+                    OpenStreetMap • MapSwipe • Drone Task Manager
+                </li>
+
+                <li>
+                    <strong>Productivity &amp; Research Tools:</strong>
+                    Microsoft Word • PowerPoint • Google Workspace •
+                    Canva • Mendeley
+                </li>
+
+                <li>
+                    <strong>Web Development — Currently Learning:</strong>
+                    HTML • CSS • JavaScript
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Soft skills -->
+        <div class="competency-group">
+
+            <h3>Soft Skills</h3>
+
+            <ul class="competency-list">
+                <li>Team Leadership</li>
+                <li>Analytical Thinking &amp; Problem-Solving</li>
+                <li>Attention to Detail</li>
+                <li>Cross-Cultural Communication</li>
+                <li>Relationship Building &amp; Collaboration</li>
+                <li>Organisation &amp; Self-Management</li>
+                <li>Adaptability &amp; Continuous Learning</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="others" class="others">
+
+        <h2 id="others_head">Others</h2>
+
+
+        <!-- Publications and conference presentations -->
+        <div class="others_group">
+
+            <h3>Publications &amp; Conference Presentations</h3>
+
+            <ol class="publication_list">
+
+                <li>
+                    <p>
+                        <strong>Oladipupo, A. I.</strong>,
+                        Islam, M. A., Kamal, A. S. M. M., et al. (2026).
+                        <em>
+                            Assessing habitat quality in the Sundarbans
+                            mangrove ecosystem of Bangladesh using
+                            the InVEST model.
+                        </em>
+                        J Coast Conserv, 30, 15.
+                        <a href="https://doi.org/10.1007/s11852-025-01188-w">
+                            Read publication
+                        </a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>Oladipupo, A. I.</strong>,
+                        Kamal, A. S. M. M., &amp; Islam, M. A. (2023).
+                        <em>
+                            Spatial-Temporal Assessment of Habitat Quality
+                            and Degradation in Sundarbans Mangrove
+                            Environment, Bangladesh.
+                        </em>
+                        Presented at the 2nd International Symposium
+                        on One Health, One World, Session VI,
+                        Dhaka, Bangladesh, 6–8 December 2023.
+                    </p>
+                </li>
+
+            </ol>
+
+        </div>
+        <div class="conference_attend">
+            <h3>
+                Conference Attended
+            </h3>
+            <ol>
+                <li>
+                    <strong>EUE 2026 – Esri Portugal User Conference</strong>
+                    (2026), Lisbon, Portugal. <a href="images\EUE_2026.pdf" target="_blank">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        link
+                    </a>
+                </li>
+
+                </a>
+
+                <li>
+                    <strong>Esri User Experience Conference</strong>
+                    (2025), Nigeria.
+                </li>
+
+                <li>
+                    <strong>2nd International Symposium on One Health,
+                        One World</strong>, Session VI,
+                    Dhaka, Bangladesh, 6–8 December 2023.
+                    (Conference Presentation)
+                </li>
+            </ol>
+        </div>
+
+        <!-- Leadership and volunteering -->
+        <div class="others_group">
+
+            <h3>Leadership &amp; Volunteering</h3>
+
+            <!-- Team leadership -->
+            <div class="experience_entry">
+
+                <h4>Team Leader – Climate Change Challenge</h4>
+
+                <p class="experience_organisation">
+                    <strong>Open Mapping Hub Asia-Pacific</strong>
+                </p>
+
+                <p class="experience_period">
+                    May – June 2024
+                </p>
+
+                <ul class="experience_details">
+
+                    <li>
+                        Led a four-person mapping team on disaster,
+                        humanitarian and climate-action challenges;
+                        the team won 3 of 8 challenge prizes.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Humanitarian mapping -->
+            <div class="experience_entry">
+
+                <h4>Humanitarian Mapper / Mapping Fellow</h4>
+
+                <p class="experience_organisation">
+                    <strong>
+                        Humanitarian OpenStreetMap Team &amp;
+                        Open Mapping Hub Asia-Pacific
+                    </strong>
+                </p>
+
+                <p class="experience_period">
+                    2018 – Present
+                </p>
+
+                <ul class="experience_details">
+
+                    <li>
+                        Contributed to disaster and humanitarian mapping
+                        initiatives, including more than 70,000 mapped
+                        building footprints and university
+                        emergency-response mapping.
+                    </li>
+
+                    <li>
+                        Provide mapping support during monthly mapathons
+                        focused on disaster-affected areas.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Honours and awards -->
+        <div class="others_group">
+
+            <h3>Honours &amp; Awards</h3>
+
+            <ul class="award_list">
+
+                <li>
+                    <strong>
+                        Queen Elizabeth Commonwealth Scholarship
+                    </strong>
+                    — Fully funded postgraduate scholarship.
+                </li>
+
+                <li>
+                    <strong>Best Poster Award (2023)</strong>
+                    — YouthMappers Bangladesh Community GIS Day /
+                    OpenStreetMap GeoWeek.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+    <!-- CONTACT FORM-->
+    <section id="contact" class="contact_sec">
+
+        <h2 id="contact_head">Contact Me</h2>
+
+        <p>
+            For professional opportunities, collaborations or enquiries,
+            please send me a message using the form below.
+        </p>
+
+        <p id="contact_intruct">
+            All fields are required.
+        </p>
+
+        <!-- FormSubmit handles delivery to email inbox -->
+        <form action="https://formsubmit.co/oladipupoademola23@gmail.com" method="POST" class="contact_form">
+
+            <!-- Choose the layout of the email you receive -->
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Visitor's name -->
+            <div class="form_field">
+
+                <label for="contact_name">Name</label>
+
+                <input type="text" id="contact_name" name="name" placeholder="Enter your full name" autocomplete="name"
+                    maxlength="100" required>
+
+            </div>
+
+            <!-- Visitor's email address, used when you reply -->
+            <div class="form_field">
+
+                <label for="contact_email">Email Address</label>
+
+                <input type="email" id="contact_email" name="email" placeholder="Enter your email address"
+                    autocomplete="email" maxlength="254" required>
+
+            </div>
+
+            <!-- Subject of the email you receive -->
+            <div class="form_field">
+
+                <label for="contact-subject">Subject</label>
+
+                <input type="text" id="contact_subject" name="_subject" placeholder="What is your message about?"
+                    maxlength="150" required>
+
+            </div>
+
+            <!-- Visitor's message -->
+            <div class="form_field">
+
+                <label for="contact_message">Message</label>
+
+                <textarea id="contact_message" name="message" placeholder="Write your message here..." rows="7"
+                    maxlength="5000" required></textarea>
+
+            </div>
+
+            <!-- Explain that an external service processes the form -->
+            <p id="contact-privacy" class="contact-note">
+                This form uses FormSubmit to process your details and
+                deliver your message to me. Please do not include
+                sensitive information.
+            </p>
+
+            <!-- Submit button -->
+            <button type="submit" class="contact_button">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
 </body>
 
 </html>

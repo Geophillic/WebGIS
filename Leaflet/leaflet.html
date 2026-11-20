@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa inicial</title>
+    <link rel="stylesheet" type="text/css" href="leaflet.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div id="mapDIV">i</div>
+
+    <script>
+        var map = L.map(document.getElementById("mapDIV"),
+            {
+                center: [41.1466, -8.6402],
+                zoom: 15
+            });
+        // Add OpenStreetMap tile layer to map eleme//
+        // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);// 
+        var Esri_WorldStreerMap = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS,    Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand),  TomTom, 2012'
+        });
+        Esri_WorldStreerMap.addTo(map);
+
+        // Add point feature
+        var myDataPoint = L.marker([41.158799, -8.631102]).addTo(map);
+        // Add polyline feature Arrabida bridge
+        var myDataline = L.polyline([[41.149303, -8.640834], [41.143943, -8.6395201]],
+            { color: 'blue', weight: 10 }
+        ).addTo(map)
+        // add polygon feature flup area
+        var myArea = L.polygon([[41.151671, -8.632632],
+        [41.151323, -8.632128], [41.150851, -8.630465],
+        [41.150733, -8.630508], [41.150665, -8.630615],
+        [41.150289, -8.630894], [41.150095, -8.631313],
+        [41.150762, -8.633780], [41.151671, -8.632632]],
+            { color: 'green', weight: 4 }).addTo(map);
+        // Bind popup to Data Point object 
+        myDataPoint.bindPopup("<h3>Casa da Música.</h3><p>Porto, Portugal</p>");
+         // Bind popup to Data line object 
+        myDataline.bindPopup("Ponte da Arrabida");
+        // Bind popup to Area object
+        myArea.bindPopup("<strong>Campus FLUP</strong>");
+    </script>
+
+</body>
+
+</html
